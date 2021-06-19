@@ -5,16 +5,42 @@
 		&_link 
 			font-size: 13px
 	.promo
-		&_header
+		&_header 
 			font-size: 50px
 	.reasons
-		&_block
+		&_block 
 			align-items: flex-start
-		&_descr
+		&_descr 
 			width: 300px
-	
-
+	.mobile
+		&_item 
+			width: 290px
+			&_subtitle
+				font-size: 22px
+	.choice 
+		padding: 55px 0
+		min-height: 840px
+	.require
+		br 
+			display: none
+	.footer
+		&_wrapper > div 
+			width: 50%
+			&:nth-child(1)
+				width: 25%
+			&:nth-child(3)
+				width: 25%
+				display: flex 
+				justify-content: flex-end
+		&_mobile
+			display: flex
+			a 
+				margin: 0 3px
+				img 
+					width: 100%
 @media (max-width: 991px)
+	.title 
+		font-size: 28px
 	.menu
 		&_item 
 			padding-right: 8px
@@ -22,15 +48,15 @@
 			font-size: 10px
 	.subheader
 		&_logo
-			img
+			img 
 				width: 100%
-		&_official
+		&_official 
 			font-size: 11px
-		&_phone
+		&_phone 
 			font-size: 18px
-		&_btn
+		&_btn 
 			margin-top: 21px
-			height: 40px
+			height: 40px	
 			width: 100%
 	.promo
 		&_header 
@@ -46,6 +72,12 @@
 		&_descr 
 			width: 300px
 			margin-top: 20px
+	.choice 
+		min-height: 800px
+		&_img 
+			width: 100%
+	.world
+		min-height: 650px
 	.footer
 		&_wrapper
 			flex-wrap: wrap
@@ -59,7 +91,6 @@
 			&:nth-child(3)
 				width: 100%
 				justify-content: center
-
 @media (max-width: 767px)
 	.title 
 		margin-top: 25px
@@ -109,7 +140,7 @@
 					transform: translateY(3px) rotate(45deg)
 	.xs-hidden
 		display: none
-	.xs-visible
+	.xs-visible 
 		display: block
 	.subheader
 		&_phone 
@@ -126,6 +157,9 @@
 			height: 40px
 			margin: 0 auto
 			margin-top: 10px
+	.promo
+		&_header 
+			line-height: 45px
 	.reasons
 		padding: 40px 0
 		&_descr 
@@ -134,7 +168,6 @@
 			text-align: center
 		&_text 
 			margin-top: 10px
-			text-align: center
 	.mobile 
 		padding: 40px 0
 	.choice
@@ -144,45 +177,9 @@
 		padding: 40px 0
 	.world 
 		min-height: 450px
-	.choice_img
-		width: 100%
-		margin-top: 84px
-	.choice_label
-		top: 25px
-	.choice_title_none
-		display: none
-	.choice_subtitle_none
-		display: none
-	.choice_title
-		font-size: 16px
-		font-weight: 700
-		top: 64px
-	.choice_subtitle
-		font-size: 14px
-		font-weight: 400
-		top: 72px	
-		width: 100%
-	.choice
-		padding: 70px 0 33px 0
-		min-height: 390px
-		background: #000
-		&_img 
-			margin-top: 35px
-		&_descr 
-			margin-top: 23px
-			color: #ffffff
-			font-size: 17px
-			font-weight: 300
-			line-height: 24px
-		.black 
-			display: none 
-	.hidden-320
-		display: none
-
 @media (max-width: 575px)
 	nav 
 		height: 30px
-		position: relative
 	header 
 		height: 30px
 	.title 
@@ -194,7 +191,6 @@
 		line-height: 21px
 		margin-top: 11px
 	.subheader
-		margin-top: 0
 		height: 60px
 		top: 30px
 		&_official 
@@ -249,7 +245,7 @@
 					transform: translateY(5px) rotate(-45deg)
 				&:nth-child(3)
 					transform: translateY(5px) rotate(45deg)
-		.reasons
+	.reasons
 		padding: 22px 0 36px 0
 		&_block 
 			margin-top: 26px
@@ -319,30 +315,6 @@
 			display: block
 			bottom: 30px
 			line-height: 15px
-	.choice_img
-		width: 100%
-		margin-top: 84px
-	.choice_label
-		top: 25px
-	.choice_title_none
-		display: none
-	.choice_subtitle_none
-		display: none
-	.choice_title
-		font-size: 16px
-		font-weight: 700
-		top: 64px
-	.choice_subtitle
-		font-size: 14px
-		font-weight: 400
-		top: 72px	
-		width: 100%
-	.sity
-		min-height: 360px
-		&_descr
-			top: 316px
-			a
-				font-size: 10px
 	footer 
 		padding: 25px 0 20px 0
 	.footer 
