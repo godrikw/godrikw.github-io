@@ -1,0 +1,36 @@
+.team__wrapper {
+    margin-top: 88px;
+    display: flex;
+    flex-direction: column;
+}
+
+.team_text_wrapper {
+    margin-top: 80px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.team_text {
+    margin-right: 362px;
+    width: 534px;
+    font-weight: normal;
+    font-size: 18px;
+    color: #1D1D1D;
+
+}
+
+@media (max-width: 1300px) {
+    .team__wrapper {
+        margin-top: 0;
+
+    }
+    .team_text_wrapper {
+        margin-top: 40px;
+
+    }
+    .team_text {
+        margin-right: 0;
+        width: 100%;
+        font-size: 14px;
+    }
+}

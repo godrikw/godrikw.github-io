@@ -1,0 +1,27 @@
+.headerItem__list {
+    display: flex;
+}
+
+.headerItem__list_type {
+    list-style-type: none;
+    margin: 0 17px;
+
+}
+
+.headerItem__link {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.headerItem__link:hover {
+    color: #2E4ADF;
+}
+
+@media  (max-width: 900px) {
+    .headerItem__list { display: none}
+}
+
+
+

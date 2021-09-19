@@ -1,0 +1,16 @@
+.headerShow {
+    font-weight: 600;
+    font-size: 14px;
+    color: inherit;
+    margin-left: 9px;
+}
+
+.headerShowWrapper {
+    cursor: pointer;
+}
+
+@media  (max-width: 900px) {
+.headerShowWrapper {
+    display: none;
+}
+}

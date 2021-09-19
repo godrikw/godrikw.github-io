@@ -1,0 +1,128 @@
+.container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    z-index: 10;
+    top: 0;
+    left: 0;
+
+}
+
+.wrapper {
+    height: 100vh;
+    background: url("./menu.png") no-repeat 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.wrapper_top {
+    width: 100% ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(190, 190, 190, 0.45);
+    margin: 0 20px;
+
+    padding: 0 100px 13px;
+}
+
+.wrapper_top_link {
+    display: block;
+}
+
+.main_block {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main_text {
+    font-weight: bold;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #1D1D1D;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-bottom: 1px solid #ffffff;
+}
+
+.main_text:hover {
+    color: #2E4ADF;
+    border-bottom: 1px solid #2E4ADF;
+
+}
+
+.footer_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 200px 0;
+    padding: 0 100px;
+}
+
+.footer_soc {
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_soc_icon {
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #646262;
+    transition: all 0.5s;
+}
+
+.footer_soc_icon:hover {
+    background: #2E4ADF;
+}
+
+.footer_block_text {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer_text {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+.close {
+    font-size: 40px;
+    cursor: pointer;
+
+}
+
+@media (max-width: 600px) {
+    .wrapper_top {
+        padding: 0 20px 13px;
+    }
+
+    .main_block {
+        margin-top: 50px;
+    }
+    .wrapper_top_link {
+        display: none;
+    }
+
+    .footer_wrapper {
+        margin: 100px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .footer_block_text {
+        margin: 20px 0;
+        align-items: center;
+    }
+}

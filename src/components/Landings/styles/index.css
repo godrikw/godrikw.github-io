@@ -1,0 +1,17 @@
+.container {
+    margin: 0 70px;
+}
+
+
+@media (min-width: 376px) and (max-width: 1366px) {
+    .container {
+        margin: 0 50px;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        margin: 0 13px;
+    }
+}
+

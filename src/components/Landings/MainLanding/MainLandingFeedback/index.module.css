@@ -1,0 +1,121 @@
+.feedback__wrapper {
+    margin-top: 200px;
+    background: url(./bg.png) center no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback__form_wrapper {
+    background: rgba(21, 21, 21, 0.8);
+    backdrop-filter: blur(50px);
+    border-radius: 5px;
+    padding: 80px 186px 80px 101px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback__form_title {
+    display: flex;
+    flex-direction: column;
+    margin-right: 242px;
+}
+
+.feedback__form_title_text {
+    font-weight: bold;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #898989;
+    margin-bottom: 114px;
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback__form_input {
+    width: 370px;
+    height: 55px;
+    color: #1D1D1D;
+    padding-top: 19px;
+    padding-left: 21px;
+    padding-bottom: 20px;
+}
+
+.feedback__form_input:nth-child(2) {
+    margin-top: 20px;
+}
+
+.feedback__form_button_wrapper {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+.feedback__form_button {
+    padding: 18px 68px 19px 68px;
+    background: #F5F5F5;
+    margin-right: 35px;
+
+}
+
+.feedback__form_button_text {
+    font-weight: 300;
+    font-size: 12px;
+    color: #F7F7F7;
+    opacity: 0.5;
+}
+
+.logo_text {
+    color: #EEEEEE;
+}
+
+@media (max-width: 1154px) {
+    .feedback__wrapper {
+        margin-top: 40px;
+        padding: 113px 13px;
+        height: 100%;
+
+    }
+    .feedback__form_wrapper {
+        padding: 105px 20px 105px 20px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .feedback__form_title {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-right: 0;
+    }
+
+    .feedback__form_title_text {
+        font-size: 20px;
+        margin-top: 25px;
+        flex-direction: column;
+        margin-bottom: 46px;
+    }
+    .feedback__form_input {
+        width: 100%;
+    }
+
+    .feedback__form_button_wrapper {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .feedback__form_button {
+        padding: 15px 37px;
+        background: #F5F5F5;
+        margin-right: 0;
+        margin-bottom: 15px;
+
+    }
+
+
+}
