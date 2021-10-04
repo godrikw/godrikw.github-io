@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import styles from './index.module.css'
-import classnames from 'classnames';
+import styles from './index.module.css';
 import {Slide} from "./Slide";
+
 const sliderData = [
     {
         style: {backgroundImage: 'url(https://cdn.pixabay.com/photo/2016/11/22/23/44/porsche-1851246_960_720.jpg)'},
@@ -35,7 +35,7 @@ export const Slider = () => {
             {sliderData.map(function (slideData, index) {
                 return (
                    <Slide
-                       isActive={activeSlide == index}
+                       isActive={activeSlide === index}
                        onClick={() => {setActiveSlide(index)}}
                        style={slideData.style}
                        text={slideData.text}

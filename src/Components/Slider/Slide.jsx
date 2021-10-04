@@ -1,11 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
 import styles from './index.module.css'
 import classnames from 'classnames';
 
 
 
 export const Slide = (props) => {
-    const [active, setActive] = useState(false)
+
     return (
         <div
             onClick={() => {
