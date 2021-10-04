@@ -1,0 +1,61 @@
+.container {
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+
+}
+
+.block {
+    user-select: none;
+    position: relative;
+    height: 80vh;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+    color: white;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 500ms ease-in-out;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.text {
+    user-select: none;
+    position: absolute;
+    font-size: 24px;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+    background-color: black;
+    padding: 15px;
+    border-radius: 10px;
+
+}
+
+.active {
+    flex: 10;
+}
+
+.block.active .text{
+    opacity: 1;
+    transition: opacity 1.5s ease-in;
+}
+
+@media (max-width: 400px) {
+    .block {
+        height: 35vh;
+    }
+
+    .text {
+        user-select: none;
+        font-size: 14px;
+        bottom: 10px;
+        left: 10px;
+        margin: 0;
+        padding: 15px;
+
+    }
+}
