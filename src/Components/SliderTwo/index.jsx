@@ -34,7 +34,7 @@ return (
                     key={index}
                 >
                     {index === current && (
-                        <img src={slide.image} alt='travel image' className={styles.image} />
+                        <img src={slide.slideIm} alt='travel' className={styles.image} />
                     )}
                 </div>
             );

@@ -4,7 +4,7 @@ import './index.css';
 import {SliderTwo} from "./Components/SliderTwo";
 import {SliderData} from "./Components/SliderTwo/SliderData";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import styles from "./Components/MainPage/index.module.css";
+
 
 
 
@@ -14,8 +14,8 @@ function App() {
     <div className={"main"}>
         <Router>
             <Route path='/main'>
-                <Link to='/slider'><div className={styles.block}>Первый Слайдер</div></Link>
-                <Link to='/sliders'><div className={styles.block}>Второй Слайдер</div></Link>
+                <Link to='/slider'><div className={"block"}>Первый Слайдер</div></Link>
+                <Link to='/sliders'><div className={"block"}>Второй Слайдер</div></Link>
             </Route>
 
 
@@ -25,7 +25,7 @@ function App() {
             </Route>
 
             <Route>
-                    <Link to='/main'><div className={"home"}>H</div></Link>
+                    <Link to='/main' className={"home"}>H</Link>
             </Route>
         </Router>
     </div>
