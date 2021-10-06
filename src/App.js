@@ -4,6 +4,7 @@ import './index.css';
 import {SliderTwo} from "./Components/SliderTwo";
 import {SliderData} from "./Components/SliderTwo/SliderData";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import {DrapDrop} from "./Components/DrapDrop";
 
 
 
@@ -16,6 +17,7 @@ function App() {
             <Route path='/main'>
                 <Link to='/slider'><div className={"block"}>Первый Слайдер</div></Link>
                 <Link to='/sliders'><div className={"block"}>Второй Слайдер</div></Link>
+                <Link to='/drap'><div className={"block"}>Drap Drop</div></Link>
             </Route>
 
 
@@ -23,6 +25,9 @@ function App() {
             <Route path='/sliders'>
                 <SliderTwo slides={SliderData}/>
             </Route>
+
+            <Route path='/drap' component={DrapDrop} />
+
 
             <Route>
                     <Link to='/main' className={"home"}>H</Link>
