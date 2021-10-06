@@ -4,7 +4,6 @@ import './index.css';
 import {SliderTwo} from "./Components/SliderTwo";
 import {SliderData} from "./Components/SliderTwo/SliderData";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import {MainPage} from "./Components/MainPage";
 import styles from "./Components/MainPage/index.module.css";
 
 
