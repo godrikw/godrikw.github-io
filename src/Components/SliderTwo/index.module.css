@@ -4,10 +4,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
 }
 
 .image {
-    flex: 1;
+    width: 1000px;
+    height: 600px;
     border-radius: 20px;
 }
 
@@ -19,7 +21,7 @@
     color: #000;
     z-index: 10;
     cursor: pointer;
-    user-select: none;
+    user-select: auto;
 }
 
 .rightArrow {
@@ -30,6 +32,25 @@
     color: #000;
     z-index: 10;
     cursor: pointer;
-    user-select: none;
+    user-select: auto;
+
 }
 
+
+
+@media (max-width: 400px) {
+    .image {
+        width: 300px;
+        height: auto;
+    }
+    .leftArrow {
+        left: 12px;
+        font-size: 2rem;
+        color: #ffffff;
+    }
+    .rightArrow {
+        right: 12px;
+        font-size: 2rem;
+        color: #ffffff;
+    }
+}
