@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "NEXT ART";
+    src: url("../fonts/NEXT ART_SemiBold.otf");
+}
+
+.wrapper {
+    margin: 0 320px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.wrapper_main {
+    background-color: #282828;
+}
+
+.title {
+    font-family: NEXT ART, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 54px;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}

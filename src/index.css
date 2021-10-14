@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: Arodora Pro;
+  src: url("../src/Components/Partfolio/fonts/ArodoraPro-Light.otf");
+}
+
+.main {
+  overflow: hidden;
+  margin: 0;
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 100%;
+  overflow: hidden;
+  user-select: none;
+  z-index: 10;
+}
+.home:hover {
+  user-select: none;
+  background:  #fff001 50%;
+}
+
+.block_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.block {
+  font-family: Arodora Pro, sans-serif;
+  font-size: 25px;
+  width: 300px;
+  height: 300px;
+  border-radius: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+  color: black;
+  background-color: white;
+  background-image: -webkit-linear-gradient(45deg, #a60ff1 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #a60ff1 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  box-shadow: 0 2px 13px rgba(166, 15, 241, 100);
+  -webkit-transition: background 400ms ease-in-out;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.4s ease-in-out;
+}
+.block:hover {
+  background-position: 0;
+  box-shadow: 0 14px 28px rgba(157, 24, 210, 0.48), 0 10px 10px rgba(0,0,0,0.22);
+  transform: scale(1.09);
+}
+
+.his {
+  width: 500px;
+  height: 500px;
+  background-color: black;
+}
+
+
+.hides {
+  display: none;
+}
+
+@media (max-width: 400px) {
+  .block {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "NEXT ART";
+    src: url("../../fonts/NEXT ART_SemiBold.otf");
+}
+
+@font-face {
+    font-family: Arodora Pro;
+    src: url("../../fonts/ArodoraPro-Light.otf");
+}
+
+.wrapper {
+    margin-top: 154px;
+    padding-bottom: 49px;
+    background: url("../img/Ellips_bg.png") no-repeat center;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.content_left {
+    position: relative;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.content_left_block_one {
+    position: relative;
+    top: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2C2C2C;
+    border-radius: 14px;
+    margin-bottom: 197px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.47);
+}
+
+.content_left_block_two {
+    position: relative;
+    bottom: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #2C2C2C;
+    border-radius: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.47);
+}
+
+.content_center {
+    display: flex;
+    flex-direction: column;
+    padding: 63px;
+    background: #2C2C2C;
+    border-radius: 14px;
+    width: 30%;
+    box-shadow: 6px 6px 4px 6px rgba(0, 0, 0, 0.47);
+}
+
+.content_center_title {
+    font-family: NEXT ART, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 54px;
+    color: #E4E4E4;
+    margin-bottom: 36px;
+}
+
+.content_center_subTitle {
+    font-family: Arodora Pro, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+.content_right {
+    z-index: 10;
+    position: relative;
+    right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.content_right_img {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.47);
+    background: #2C2C2C;
+    border-radius: 14px;
+    padding: 20px;
+}

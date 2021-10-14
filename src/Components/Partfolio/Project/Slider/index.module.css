@@ -1,0 +1,146 @@
+@font-face {
+    font-family: Arodora Pro;
+    src: url("../../fonts/ArodoraPro-Light.otf");
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    padding-bottom: 150px;
+}
+
+
+.wrapper_block {
+    width: 970px;
+    height: 600px;
+    position: relative;
+    background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+    box-shadow: 0 4px 15px rgba(27, 27, 27, 0.28);
+    border-radius: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper_block_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.image {
+    width: 493px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-right: 81px;
+}
+
+
+.wrapper_text_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.title {
+    font-family: Arodora Pro, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+
+.subTitle {
+    font-family: Arodora Pro, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-align: center;
+    width: 90%;
+    margin-bottom: 25px;
+}
+
+.more {
+    text-decoration: none;
+    font-family: Arodora Pro, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #E2A100;
+    margin-left: 20px;
+}
+
+.more_link {
+    text-decoration: none;
+}
+
+.more_link::after {
+    opacity: 0;
+    text-decoration: none;
+    content: '=>';
+    padding-left: 5px;
+}
+
+
+.more_link:hover::after {
+    opacity: 1;
+    color: #E2A100;
+    text-decoration: none;
+    content: '=>';
+    padding-left: 5px;
+}
+
+.leftArrow {
+    position: absolute;
+    top: 50%;
+    left: -132px;
+    font-size: 3rem;
+    color: #e2a100;
+
+    z-index: 10;
+    cursor: pointer;
+    user-select: auto;
+}
+
+.rightArrow {
+    position: absolute;
+    top: 50%;
+    right: -132px;
+    font-size: 3rem;
+    color: #e2a100;
+    z-index: 10;
+    cursor: pointer;
+    user-select: auto;
+
+}
+
+
+
+@media (max-width: 400px) {
+    .image {
+        width: 250px;
+        height: auto;
+    }
+    .leftArrow {
+        top: 45%;
+        left: -50px;
+        font-size: 2rem;
+        color: #ffffff;
+    }
+    .rightArrow {
+        top: 45%;
+        right: -50px;
+        font-size: 2rem;
+        color: #ffffff;
+    }
+}
