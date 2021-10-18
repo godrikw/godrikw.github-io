@@ -126,11 +126,19 @@
 
 
 
-@media (max-width: 400px) {
-    .image {
+@media (max-width: 450px) {
+    .wrapper_block {
         width: 250px;
-        height: auto;
+        height: 200px;
+
     }
+    .image {
+        width: 100px;
+        height: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
     .leftArrow {
         top: 45%;
         left: -50px;
@@ -142,5 +150,32 @@
         right: -50px;
         font-size: 2rem;
         color: #ffffff;
+    }
+
+
+    .wrapper_text_block {
+
+        height: 150px;
+        width: 100%;
+        margin-right: 20px;
+    }
+
+
+    .title {
+        font-size: 13px;
+        line-height: 15px;
+        margin-bottom: 10px;
+    }
+
+    .subTitle {
+        overflow: scroll;
+        font-size: 12px;
+        line-height: 21px;
+        margin-bottom: 5px;
+    }
+    .more {
+        font-size: 12px;
+        line-height: 15px;
+
     }
 }

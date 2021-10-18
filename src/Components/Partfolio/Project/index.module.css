@@ -22,3 +22,9 @@
     color: #FFFFFF;
     margin-bottom: 50px;
 }
+
+@media (max-width: 450px) {
+    .wrapper {
+        margin: 0 30px;
+    }
+}

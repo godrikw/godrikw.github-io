@@ -87,3 +87,21 @@
 .button_top_link:active {
     transition: all 0.5s;
 }
+
+@media (max-width: 450px) {
+    .wrapper {
+        margin: 0 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .left_list_block {
+        margin-right: 0;
+    }
+
+    .wrapper_right {
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+}
