@@ -6,7 +6,7 @@ import img_3 from './img/img_3.png'
 
 export const About = () => {
     return (
-        <div className={styles.wrapper}>
+        <div className={styles.wrapper} id={'test2'}>
             <div className={styles.content_left}>
                 <div className={styles.content_left_block_one}>
                     <img src={img_1} alt="img"/>

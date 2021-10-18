@@ -44,7 +44,7 @@ export const MainContent = () => {
     return (
         <div className={styles.wrapper}>
             <CardSkills item={ContentData}/>
-            <About/>
+            <About />
         </div>
     );
 };

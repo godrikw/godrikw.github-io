@@ -46,42 +46,7 @@
     font-weight: normal;
 }
 
-.burger {
-    display: none;
 
-}
-
-.burger_line {
-    width: 50px;
-    height: 2px;
-    background-color: white;
-    margin-bottom: 10px;
-}
-
-.nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 219px;
-}
-
-.nav_link {
-    text-decoration: none;
-}
-.nav_link_text {
-    font-family: "Arodora Pro", sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    color: #E4E4E4;
-    border-bottom: 1px solid #282828;
-    list-style-type: none;
-}
-
-
-.nav_link_text:hover {
-    border-bottom: 1px solid rgb(225,153,0);
-}
 
 .offer_main {
     background: url("../img/man.png") no-repeat right -100px bottom -22vh;
@@ -167,55 +132,7 @@
         margin: 0 30px;
     }
 
-    .burger {
-        display: flex;
-        flex-direction: column;
-    }
 
-    .nav_wrapper {
-       display: none;
-    }
-
-    .navPosition {
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        background-color: #2a2a2a;
-        z-index: 100;
-        top: 0;
-        left: 0;
-        align-items: center;
-        justify-content: center;
-    }
-
-
-    .nav {
-        transition: all 0.6s;
-        width: 100%;
-        margin-left: 0;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-        margin-top: 50%;
-    }
-    .nav_link {
-        margin-bottom: 20px;
-    }
-
-    .nav_link_text {
-        font-size: 30px;
-    }
-
-    .close {
-        display: block;
-        font-size: 40px;
-        color: white;
-        z-index: 100;
-        position: absolute;
-        top: 20px;
-        right: 50px;
-    }
 
     .offer_main {
         background-position: right -100px bottom 0;

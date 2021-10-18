@@ -4,7 +4,7 @@ import {Slider} from "./Slider";
 
 export const Project = () => {
     return (
-        <div className={styles.wrapper_main}>
+        <div className={styles.wrapper_main} id={'test3'}>
             <div className={styles.wrapper}>
                 <div className={styles.title}>Portfolio</div>
                 <Slider/>

@@ -7,19 +7,38 @@ import {Link} from 'react-scroll'
 
 export const Footer = () => {
     return (
-        <div className={styles.wrapper_main}>
+        <div className={styles.wrapper_main} id={'test4'}>
             <div className={styles.wrapper}>
                 <div className={styles.left_list_block}>
                     <ul className={styles.list_type}>
-                        <a href="#">
+                        <Link to='test1'>
                             <li className={styles.list}>Home</li>
-                        </a>
-                        <a href="#">
-                            <li className={styles.list}>About me</li>
-                        </a>
-                        <a href="#">
-                            <li className={styles.list}>Portfolio</li>
-                        </a>
+                        </Link>
+
+                       <Link
+                             activeClass="active"
+                             to='test2'
+                             spy={true}
+                             smooth={true}
+                             offset={-70}
+                             duration={500}
+                       >
+                           <li className={styles.list}>About me</li>
+                       </Link>
+
+
+                      <Link
+                              activeClass="active"
+                              to='test3'
+                              spy={true}
+                              smooth={true}
+                              offset={-70}
+                              duration={500}
+                      >
+                          <li className={styles.list}>Portfolio</li>
+                      </Link>
+
+
                         <a href="#">
                             <li className={styles.list}>Contact</li>
                         </a>
