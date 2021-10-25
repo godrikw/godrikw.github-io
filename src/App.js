@@ -8,6 +8,7 @@ import {DragDrop} from "./Components/DrapDrop";
 import {Portfolio} from "./Components/Partfolio";
 import classnames from "classnames";
 import {routes} from "./routes";
+import {Weather} from "./Components/Weather";
 
 
 function App() {
@@ -42,6 +43,9 @@ function App() {
                         <Link to={routes.features.portfolio} onClick={() => setIsNavigationButtonHidden(!isNavigationButtonHidden)}>
                             <div className={"block"}>Portfolio</div>
                         </Link>
+                        <Link to={routes.features.weather} onClick={() => setIsNavigationButtonHidden(!isNavigationButtonHidden)}>
+                            <div className={"block"}>Weather</div>
+                        </Link>
                     </div>
                 </div>
             </Route>
@@ -55,6 +59,9 @@ function App() {
 
             <Route path={routes.features.portfolio}>
                 <Portfolio state={setIsNavigationButtonHidden} states={isNavigationButtonHidden}/>
+            </Route>
+            <Route path={routes.features.weather}>
+                <Weather state={setIsNavigationButtonHidden} states={isNavigationButtonHidden}/>
             </Route>
         </div>
     );

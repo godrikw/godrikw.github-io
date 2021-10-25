@@ -1,0 +1,53 @@
+@import "../../../../styles/variables";
+
+.this__day {
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  background: var(#{--components-background-default});
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+}
+
+.top__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+  svg {
+    width: 119px;
+    height: 119px;
+  }
+}
+
+.this__temp {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 96px;
+  color: $primary-color;
+}
+
+.this__day_name {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  color: var(#{--text-color-default});
+}
+
+.bottom__block {
+  .this__time,
+  .this__city {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: $base-color;
+    font-size: 25px;
+  }
+  .this__time {
+    margin-bottom: 14px;
+  }
+}
+
