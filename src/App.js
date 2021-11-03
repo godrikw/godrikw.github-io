@@ -9,6 +9,7 @@ import {Portfolio} from "./Components/Partfolio";
 import classnames from "classnames";
 import {routes} from "./routes";
 import {Weather} from "./Components/Weather";
+import {ToDo} from "./Components/ToDo";
 
 
 function App() {
@@ -22,7 +23,8 @@ function App() {
                 routes.root,
                 routes.features.slider_1,
                 routes.features.slider_2,
-                routes.features.drag
+                routes.features.drag,
+                routes.features.todo
             ]}>
                 <Link to={routes.root} className={"home"}>H</Link>
             </Route>
@@ -46,6 +48,9 @@ function App() {
                         <Link to={routes.features.weather} onClick={() => setIsNavigationButtonHidden(!isNavigationButtonHidden)}>
                             <div className={"block"}>Weather</div>
                         </Link>
+                        <Link to={routes.features.todo}>
+                            <div className={"block"}>ToDo</div>
+                        </Link>
                     </div>
                 </div>
             </Route>
@@ -63,6 +68,7 @@ function App() {
             <Route path={routes.features.weather}>
                 <Weather state={setIsNavigationButtonHidden} states={isNavigationButtonHidden}/>
             </Route>
+            <Route path={routes.features.todo} component={ToDo}/>
         </div>
     );
 }

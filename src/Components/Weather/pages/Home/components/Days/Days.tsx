@@ -83,7 +83,7 @@ export const Days = (props: Props) => {
             <div className={styles.days}>
                 {days.map((day:Day) => {
                     return (
-                        <Card days={day}/>
+                        <Card days={day} key={day.day}/>
                     )
                 })}
             </div>

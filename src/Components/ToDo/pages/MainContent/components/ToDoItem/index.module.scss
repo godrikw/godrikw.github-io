@@ -1,0 +1,15 @@
+.todo_item {
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+  margin: 0 auto 17px;
+  max-width: 90%;
+  cursor: pointer;
+  .name {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+}
+

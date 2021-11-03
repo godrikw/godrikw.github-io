@@ -12,8 +12,8 @@ export const Header = () => {
 
     const options = [
         { value: 'city-1', label: 'Воронеж' },
-        { value: 'city-2', label: 'Москва' },
-        { value: 'city-3', label: 'Санкт-Петербург' }
+        { value: 'city-2', label: 'Санкт-Петербург' },
+        { value: 'city-3', label: 'Москва' },
     ]
 
 
@@ -58,7 +58,8 @@ export const Header = () => {
                 >
                     <GlobalSvgSelector id='change-theme'/>
                 </div>
-                <Select defaultValue={options[0]} styles={colorStyles} options={options} />
+
+                <Select defaultValue={options[0]} options={options} styles={colorStyles} />
             </div>
         </header>
     );
