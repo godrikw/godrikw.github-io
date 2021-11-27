@@ -8,5 +8,6 @@ export const storage = {
         if (item) {
             return JSON.parse(item)
         }
+        return null
     }
 }

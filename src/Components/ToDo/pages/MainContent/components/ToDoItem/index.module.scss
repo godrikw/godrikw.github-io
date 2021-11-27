@@ -7,9 +7,31 @@
   margin: 0 auto 17px;
   max-width: 90%;
   cursor: pointer;
-  .name {
-    font-size: 16px;
-    margin-left: 10px;
+  .block {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .name {
+      font-size: 16px;
+      margin-left: 10px;
+    }
+    .close {
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+      background-color: #0357c5;
+      color: #fff;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-size: 12px;
+    }
+    .close:hover{
+      transform: scale(1.2);
+    }
   }
+
+
 }
 

@@ -1,6 +1,8 @@
-import React, {FC, useState} from 'react';
+import React, {FC, useEffect, useState} from 'react';
 import styles from './index.module.scss'
 import {ToDoItem} from "./components/ToDoItem/ToDoItem";
+import { nanoid } from 'nanoid/non-secure'
+import { customAlphabet } from 'nanoid'
 
 export type ToDoBaseItemType = {
     _id: number
@@ -9,16 +11,6 @@ export type ToDoBaseItemType = {
 }
 
 
-type GenericType<T> = {
-    name: T
-}
-const blob:GenericType<{
-    title: string
-}> = {
-    name: {
-        title: ''
-    }
-}
 
 export type ToDoBaseType = [
     ToDoBaseItemType
@@ -26,20 +18,37 @@ export type ToDoBaseType = [
 
 export type todosType = Array<ToDoBaseItemType>
 
+
+const getInitialTodos = () => {
+    const todosFromLocalStorage = localStorage.getItem('todos')
+
+    return todosFromLocalStorage
+        ? JSON.parse(todosFromLocalStorage)
+        : []
+}
+
 export const MainContent:FC<{}> = (props) => {
     const [name, setName] = useState('')
-    const [todos, setTodos] = useState<todosType>([
-        {
-            _id: 0,
-            name: 'купить мак',
-            isChecked: true
-        },
-    ])
+    const [todos, setTodos] = useState<todosType>([])
+    const [didMount, setDidMount] = useState(false)
+
+    useEffect(() => {
+        if (didMount) {
+            localStorage.setItem('todos', JSON.stringify(todos))
+        }
+    }, [todos]);
+
+    useEffect(() => {
+        setDidMount(true)
+        setTodos(getInitialTodos())
+    }, [])
 
     const onKeyPressNameHandler = (e:any) => {
           if (e.key === 'Enter') {
+              // const newId = Math.ceil(Math.random() * 10000)
+              const nanoid: any  = customAlphabet('1234567890abcdef', 10)
               e.preventDefault()
-              setTodos(prev => [...prev, {_id: todos.length, name, isChecked: false}])
+              setTodos(prev => [...prev, {_id: nanoid(), name, isChecked: false}])
               setName('')
         }
     }
@@ -58,6 +67,10 @@ export const MainContent:FC<{}> = (props) => {
         setTodos(newArray)
     }
 
+    const clearInput = () => {
+        localStorage.clear()
+        setTodos(getInitialTodos())
+    }
     return (
         <>
             <h1>ToDo приложение</h1>
@@ -66,8 +79,12 @@ export const MainContent:FC<{}> = (props) => {
                     key={todo._id}
                     name={todo.name}
                     isChecked={todo.isChecked}
-                    todoItemId={idx}
+                    todoItemId={todo._id}
                     toggleCheckedToDo={toggleCheckedToDo}
+                    setTodos={setTodos}
+                    todos={todos}
+                    setName={setName}
+
                 />)
             )}
             <input
@@ -77,7 +94,10 @@ export const MainContent:FC<{}> = (props) => {
                 onChange={e => setName(e.target.value)}
                 onKeyPress={onKeyPressNameHandler}
                 placeholder='Введите название'/>
+
+            <button className={styles.button} onClick={(e)=> e? clearInput() : null}>Очистить все</button>
         </>
+
     );
 };
 

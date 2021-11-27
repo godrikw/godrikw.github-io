@@ -14,3 +14,22 @@ h1 {
   text-align: center;
   margin-bottom: 30px;
 }
+
+.button {
+  margin: 30px auto;
+  display: flex;
+  padding: 10px 45px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  background-color: #8ed7ed;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 2px 0px 3px 0px black ;
+}
+
+.button:hover {
+  inset-inline-start: 30px;
+  background-color: #8fd3f4;
+  transform: scale(1.1);
+}
